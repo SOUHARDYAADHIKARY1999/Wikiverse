@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "14531983720",
+    "firebase_url": "https://wikiverse-c8aff.firebaseio.com",
+    "project_id": "wikiverse-c8aff",
+    "storage_bucket": "wikiverse-c8aff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14531983720:android:80fa092dc2e54136",
+        "android_client_info": {
+          "package_name": "com.example.suranjan.wikiverse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14531983720-rpol8el06eetfh2pf2hbnit0ivsal8pv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.suranjan.wikiverse",
+            "certificate_hash": "f0389073e60a4fbf32df51a19099603945900074"
+          }
+        },
+        {
+          "client_id": "14531983720-tq4edc9kf57bql01676062lfj85mcfm8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC05i89ThrbaNfkhSzi9qxK5sjsxmDHQYA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14531983720-tq4edc9kf57bql01676062lfj85mcfm8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
