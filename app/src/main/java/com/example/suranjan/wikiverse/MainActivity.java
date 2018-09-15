@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText query;
     TextView wordOftheDay;
-    TextView latestNews;
+    //TextView latestNews;
     TextView result1;
     ImageView image;
     String q;
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         result1 = findViewById(R.id.result);
         image = findViewById(R.id.imageId);
         //wordOftheDay = findViewById(R.id.wordOfDay);
-        latestNews = findViewById(R.id.latestNews);
+        //latestNews = findViewById(R.id.latestNews);
         query = findViewById(R.id.query);
     }
 
@@ -88,4 +88,34 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+
+    public void news1(View view) {
+        //Get url from tag
+        String url = (String)view.getTag();
+
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+
+        //pass the url to intent data
+        intent.setData(Uri.parse(url));
+
+        startActivity(intent);
+    }
+
+    /*public void news2(View view) {
+        String url = (String)view.getTag();
+
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+
+        //pass the url to intent data
+        intent.setData(Uri.parse(url));
+
+        startActivity(intent);
+    }
+
+    public void news3(View view) {
+    }*/
 }

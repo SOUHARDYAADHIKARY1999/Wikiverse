@@ -13,73 +13,103 @@
         android:src="@drawable/backgroud"
         android:tag="https://apod.nasa.gov/apod/image/1809/IMG_2086-2mauduit.jpg"
         android:scaleType="centerCrop" />
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginBottom="15dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="WELCOME TO THE NASA SPACE APPS CHALLENGE"
-            android:textColor="#ffffff"
-            android:textAlignment="center"
-            android:textSize="25dp"/>
-        <EditText
-            android:id="@+id/query"
+        android:layout_height="match_parent">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="WHAT'S IN YOUR MIND"
-            android:layout_marginBottom="15dp"
-            android:textAlignment="center"
-            android:textColorHint="@color/colorAccent"
-            android:textColor="@color/colorAccent"
-            />
-        <Button
-            android:id="@+id/search_query"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="SEARCH"
-            android:background="#0000"
-            android:textColor="#ffffff"
-            android:layout_marginBottom="15dp"
-            android:onClick="searchQ"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WELCOME TO THE NASA SPACE APPS CHALLENGE"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:textSize="25dp"/>
+            <EditText
+                android:id="@+id/query"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="WHAT'S IN YOUR MIND"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                />
+            <Button
+                android:id="@+id/search_query"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SEARCH"
+                android:background="#0000"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="15dp"
+                android:onClick="searchQ"/>
 
-        <TextView
-            android:id="@+id/result"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="RESULT"
-            android:textColor="#ffffff"
-            android:layout_marginBottom="15dp"
-            android:textAlignment="center"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="SNAP OF THE DAY"
-            android:textColor="#ffffff"
-            android:layout_marginBottom="15dp"
-            android:textAlignment="center"
-            android:textSize="25dp"
-            android:onClick="openBrowser"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="LATEST NEWS"
-            android:textColor="#ffffff"
-            android:layout_marginBottom="15dp"
-            android:textAlignment="center"
-            android:textSize="25dp"/>
-        <TextView
-            android:id="@+id/latestNews"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="NEWS"
-            android:textColor="#ffffff"
-            android:layout_marginBottom="15dp"
-            android:textAlignment="center"
-            android:textSize="25dp"/>
-    </LinearLayout>
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RESULT"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SNAP OF THE DAY"
+                android:textColor="#ffffff"
+                android:background="#0000"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:onClick="openBrowser"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LATEST NEWS FROM POPULAR WEBSITES"
+                android:textColor="#ffffff"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:textSize="25dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Space News"
+                android:textColor="#ffffff"
+                android:background="#0000"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:onClick="news1"
+                android:tag="https://www.space.com"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Down To Earth"
+                android:textColor="#ffffff"
+                android:background="#0000"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:onClick="news1"
+                android:tag="https://www.downtoearth.org.in"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tech News"
+                android:textColor="#ffffff"
+                android:background="#0000"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:onClick="news1"
+                android:tag="https://www.popsci.com"/>
+        </LinearLayout>
+    </ScrollView>
+
 
 </RelativeLayout>
