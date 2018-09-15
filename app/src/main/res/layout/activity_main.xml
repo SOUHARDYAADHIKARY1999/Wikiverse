@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/backgroud"
+        android:tag="https://apod.nasa.gov/apod/image/1809/IMG_2086-2mauduit.jpg"
         android:scaleType="centerCrop" />
 
     <LinearLayout
@@ -53,23 +54,15 @@
             android:textColor="#ffffff"
             android:layout_marginBottom="15dp"
             android:textAlignment="center"/>
-        <TextView
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="WORD OF THE DAY"
+            android:text="SNAP OF THE DAY"
             android:textColor="#ffffff"
             android:layout_marginBottom="15dp"
             android:textAlignment="center"
-            android:textSize="25dp"/>
-        <TextView
-            android:id="@+id/wordOfDay"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="WORD"
-            android:textColor="#ffffff"
-            android:layout_marginBottom="15dp"
-            android:textAlignment="center"
-            android:textSize="25dp"/>
+            android:textSize="25dp"
+            android:onClick="openBrowser"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

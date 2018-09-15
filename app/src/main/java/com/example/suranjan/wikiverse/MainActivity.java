@@ -1,10 +1,13 @@
 package com.example.suranjan.wikiverse;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -24,13 +27,15 @@ public class MainActivity extends AppCompatActivity {
     TextView wordOftheDay;
     TextView latestNews;
     TextView result1;
+    ImageView image;
     String q;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         result1 = findViewById(R.id.result);
-        wordOftheDay = findViewById(R.id.wordOfDay);
+        image = findViewById(R.id.imageId);
+        //wordOftheDay = findViewById(R.id.wordOfDay);
         latestNews = findViewById(R.id.latestNews);
         query = findViewById(R.id.query);
     }
@@ -69,4 +74,18 @@ public class MainActivity extends AppCompatActivity {
 //        String jsonQ = "[{\"word\":\"VexAG\",\"mean\":\"Venus Exploration Analysis Group\"},{\"word\":\"volatiles\",\"mean\":\"Readily vapourizable at a relatively low temperature.\"},{\"word\":\"volcanism\",\"mean\":\"Volcanic action or activity\"}]";
 //        Log.d("aa",jsonQ);
     }*/
+    public void openBrowser(View view){
+
+        //Get url from tag
+        String url = (String)image.getTag();
+
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+
+        //pass the url to intent data
+        intent.setData(Uri.parse(url));
+
+        startActivity(intent);
+    }
 }
