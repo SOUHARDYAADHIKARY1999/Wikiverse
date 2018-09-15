@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/backgroud"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WELCOME TO THE NASA SPACE APPS CHALLENGE"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="WHAT'S IN YOUR MIND"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorAccent"
+            />
+        <Button
+            android:id="@+id/search_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEARCH"
+            android:background="#0000"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="15dp"
+            android:onClick="searchQ"/>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RESULT"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WORD OF THE DAY"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:textSize="25dp"/>
+        <TextView
+            android:id="@+id/wordOfDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WORD"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:textSize="25dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LATEST NEWS"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:textSize="25dp"/>
+        <TextView
+            android:id="@+id/latestNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEWS"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
