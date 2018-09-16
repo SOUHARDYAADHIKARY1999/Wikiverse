@@ -47,6 +47,15 @@
                 android:textColor="#ffffff"
                 android:layout_marginBottom="15dp"
                 android:onClick="searchQ"/>
+            <Button
+                android:id="@+id/addDefButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Contribute"
+                android:background="#0000"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="15dp"
+                android:onClick="addDefination"/>
 
             <TextView
                 android:id="@+id/result"

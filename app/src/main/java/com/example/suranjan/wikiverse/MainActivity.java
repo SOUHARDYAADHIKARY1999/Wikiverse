@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.firebase.firestore.FirebaseFirestore;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         //wordOftheDay = findViewById(R.id.wordOfDay);
         //latestNews = findViewById(R.id.latestNews);
         query = findViewById(R.id.query);
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
     }
 
     public void searchQ(View view) {
@@ -46,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
         MyAsyncTask myAsyncTask = new MyAsyncTask(result1);
         myAsyncTask.execute(q);
     }
+
+
 
     /*void getJason()
     {
@@ -101,6 +106,11 @@ public class MainActivity extends AppCompatActivity {
         intent.setData(Uri.parse(url));
 
         startActivity(intent);
+    }
+
+    public void addDefination(View view) {
+        Intent i = new Intent(this,HelpUsGrow.class);
+        startActivity(i);
     }
 
     /*public void news2(View view) {

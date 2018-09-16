@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/backgroud"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Word"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorAccent"/>
+        <EditText
+            android:id="@+id/def"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Definition"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorAccent"/>
+        <Button
+            android:id="@+id/add"
+            android:onClick="addDef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add New Definition"
+            android:background="#0000"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="15dp"/>
+        <EditText
+            android:id="@+id/searchfromDbs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search from Database"
+            android:layout_marginBottom="0dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorAccent"/>
+        <Button
+            android:id="@+id/searchfromDbss"
+            android:onClick="addDeff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search from Database"
+            android:background="#0000"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="15dp"/>
+        <TextView
+            android:id="@+id/s1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result from Database"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+</RelativeLayout>
